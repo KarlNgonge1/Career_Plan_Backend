@@ -148,10 +148,13 @@ class WorkoutPlan:
 # ---- FastAPI app ----
 app = FastAPI(title="ANI_FIT API", version="0.1.0")
 
+origins = [
+    "https://roaring-alfajores-e56e3c.netlify.app/"
+]
 # allow the Vite dev server
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
