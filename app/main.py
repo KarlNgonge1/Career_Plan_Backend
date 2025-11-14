@@ -149,7 +149,7 @@ class WorkoutPlan:
 app = FastAPI(title="ANI_FIT API", version="0.1.0")
 
 origins = [
-    "https://roaring-alfajores-e56e3c.netlify.app/",
+    "https://roaring-alfajores-e56e3c.netlify.app",
     "http://localhost:5173",
 ]
 # allow the Vite dev server
